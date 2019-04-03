@@ -15,7 +15,6 @@ AOS.init({
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
-
 	// bootstrap dropdown hover
 
   // loader
@@ -132,8 +131,6 @@ AOS.init({
     }
 
   });
-
-
 	
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
@@ -284,17 +281,26 @@ AOS.init({
     'autoclose': true
   });
   $('#time').timepicker();
-
-
+//   $('#cover_img_block').fadeTo('slow', 0.3, function()
+// {
+//     $(this).css('background-image', imgList[1]);
+// }).delay(3000).fadeTo('slow', 1);
+/*
+  function initMap(){
+    var location ={lat:49.170239, lon:-123.132551};
+    var map = new gooogle.maps.Map(document.getElementById('map'), {zoom:4,center:location});
+    var marker = new google.maps.Marker({position:location, map:map});
+  }
+*/
   //------- Google Map  js --------//  
-
+    /*
     if (document.getElementById("map")) {
         google.maps.event.addDomListener(window, 'load', init);
 
         function init() {
             var mapOptions = {
                 zoom: 11,
-                center: new google.maps.LatLng(40.6700, -73.9400), // New York
+                center: new google.maps.LatLng(49.170239, -123.132551),
                 styles: [{
                     "featureType": "water",
                     "elementType": "geometry",
@@ -420,7 +426,7 @@ AOS.init({
                 title: 'Snazzy!'
             });
         }
-    }
+    }*/
 
 
 
