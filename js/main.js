@@ -1,12 +1,13 @@
 AOS.init({
   duration: 600
 });
-  
+
+
 
 (function($) {
 
 	'use strict';
-
+  
   $(window).stellar({
     responsive: false,
     parallaxBackgrounds: true,
@@ -26,7 +27,6 @@ AOS.init({
     }, 1);
   };
   loader();
-
 
   // navigation
   var OnePageNav = function() {
@@ -276,158 +276,25 @@ AOS.init({
     }
   });
 
+  $('#backBtn').each(function(){
+    $(this).click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 500);
+        return false; 
+    });
+});
+
   $('#date').datepicker({
     'format': 'm/d/yyyy',
     'autoclose': true
   });
   $('#time').timepicker();
-//   $('#cover_img_block').fadeTo('slow', 0.3, function()
-// {
-//     $(this).css('background-image', imgList[1]);
-// }).delay(3000).fadeTo('slow', 1);
-/*
-  function initMap(){
-    var location ={lat:49.170239, lon:-123.132551};
-    var map = new gooogle.maps.Map(document.getElementById('map'), {zoom:4,center:location});
-    var marker = new google.maps.Marker({position:location, map:map});
-  }
-*/
-  //------- Google Map  js --------//  
-    /*
-    if (document.getElementById("map")) {
-        google.maps.event.addDomListener(window, 'load', init);
 
-        function init() {
-            var mapOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(49.170239, -123.132551),
-                styles: [{
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#e9e9e9"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 29
-                    }, {
-                        "weight": 0.2
-                    }]
-                }, {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 18
-                    }]
-                }, {
-                    "featureType": "road.local",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "featureType": "poi.park",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#dedede"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{
-                        "visibility": "on"
-                    }, {
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "elementType": "labels.text.fill",
-                    "stylers": [{
-                        "saturation": 36
-                    }, {
-                        "color": "#333333"
-                    }, {
-                        "lightness": 40
-                    }]
-                }, {
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "transit",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f2f2f2"
-                    }, {
-                        "lightness": 19
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 17
-                    }, {
-                        "weight": 1.2
-                    }]
-                }]
-            };
-            var mapElement = document.getElementById('map');
-            var map = new google.maps.Map(mapElement, mapOptions);
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(40.6700, -73.9400),
-                map: map,
-                title: 'Snazzy!'
-            });
-        }
-    }*/
+  $('.modalSourceImg').click(function(){
+    $('#myModal').css("display", "block");
+    $('#modalImg').attr("src",$('modalSourceImg').attr("src"));
+  });
 
-
-
+  $('.close').click(function(){
+    $('#myModal').css("display","none");
+  });
 })(jQuery);

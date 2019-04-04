@@ -4,9 +4,6 @@
     <title>云庄 &mdash; 云南风味</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Free Template by Free-Template.co" />
-    <meta name="keywords" content="free template, free bootstrap, free website template" />
-    <meta name="author" content="Free-Template.co" />
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
 
@@ -24,25 +21,9 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
 
-
-
-    <!-- 
-    //////////////////////////////////////////////////////
-
-    Free TEMPLATE 
-    DESIGNED & DEVELOPED by free-template.co
-      
-    Website:    https://free-template.co
-    Email:      freetemplate.co@gmail.com
-    Twitter:    https://twitter.com/Free_Templateco
-    Facebook:   https://www.facebook.com/Free.Template.co/
-
-    //////////////////////////////////////////////////////
-    -->
   </head>
   <body class="bg-light">
 
@@ -57,7 +38,7 @@
             <li><a href="#section-about">餐厅简介</a></li>
             <li><a href="#section-menu">菜单</a></li>
             <li><a href="#section-reservation">预定座位</a></li>
-            <li><a href="#section-contact">联系我们</a></li>
+            <li><a href="#footer">联系我们</a></li>
           </ul>
         </div>
       </nav>
@@ -68,7 +49,7 @@
              
           </div>
           <div class="col-2 col-md-6 text-center site-logo-wrap">
-            <a href="index.html" class="site-logo"><img src="images/logo.png"></a>
+            <a href="index.html" class="site-logo img-responsive"><img src="images/logo.png"></a>
           </div>
           <div class="col-5 col-md-3 text-right menu-burger-wrap">
             <a href="#" class="site-nav-toggle js-site-nav-toggle"><i></i></a>
@@ -80,8 +61,9 @@
       
       <div class="main-wrap " id="section-home">
 
-        <div class="cover_1 overlay bg-slant-white bg-light">    
-            <div class="overlayText"><div class="row align-items-center justify-content-center text-center">
+        <div class="cover_1 overlay bg-slant-white bg-light">
+             
+            <!-- <div class="overlayText"><div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10" data-aos="fade-up">
                   <h2 class="heading mb-5">来自云南的地道风味</h2>
                   <p class="sub-heading mb-5">用舌尖感受</p>
@@ -100,9 +82,8 @@
                     <img class="d-block w-100 img-fluid" src="images/headImage3.jpeg" alt="Third slide">
                 </div>
               </div>
-            </div>
-          <!--
-          <div class="img_bg" style="background-image: url(images/headImage.jpeg);" data-stellar-background-ratio="0.5">
+            </div> -->
+          <div id="cover_bg" class="img_bg" data-stellar-background-ratio="0.5">
             <div class="container">
               <div class="row align-items-center justify-content-center text-center">
                 <div class="col-md-10" data-aos="fade-up">
@@ -112,7 +93,7 @@
                 </div>
               </div>
             </div>
-          </div>-->
+          </div>
         </div> <!-- .cover_1 -->
 
         <div class="section"  data-aos="fade-up">
@@ -190,7 +171,7 @@
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
-                    <img class="lunchmenu" src="images/lunchmenu.jpg"/>
+                    <img class="lunchmenu modalSourceImg" src="images/lunchmenu.jpg"/>
                     <!--
                     <div class="d-block d-md-flex menu-food-item">
                       <div class="text order-1 mb-3">
@@ -564,28 +545,44 @@
         <div id="map"  data-aos="fade"></div>
 
 
-        <footer class="ftco-footer">
+        <footer class="ftco-footer" id="footer">
           <div class="container">
-            
+              
             <div class="row">
-            
-            <div class="col-md-4 mb-5">
-              <div class="footer-widget">
-                <h3 class="mb-4">午餐营业时间</h3>
-                <p>从 11:00pm &mdash;到 1:30pm</p>
-                <h3 class="mb-4">晚餐营业时间</h3>
-                <p>每日: <br> 从 5:00pm &mdash;到 9:00pm</p>
+              
+              <div class="col-md-4 mb-5">
+                <div class="footer-widget">
+                  <h3 class="mb-4">午餐营业时间</h3>
+                  <p>从 11:00pm &mdash;到 3:00pm</p>
+                  <h3 class="mb-4">晚餐营业时间</h3>
+                  <p>每日: <br> 从 5:00pm &mdash;到 10:00pm</p>
+                </div>
               </div>
-            </div>
-
+              <div class="col-md-4">
+                  <div class="footer-widget">
+                    <h3 class="mb-4">电话</h3>
+                    <p>778-297-6000</p>
+                    <h3 class="mb-4">邮箱地址</h3>
+                    <p><a href="mailto:yunzhuangvan@gmail.com">yunzhuangvan@gmail.com</a></p>
+                  </div>
+              </div>
             </div>
           </div>
         </footer>
-      
-    </div>
 
+    </div>
+    <!-- <a href="#section-home"><div id="backBtn" class="btn btn-primary"></div> </a> -->
+    <div id="backBtn" class="btn btn-primary"></div>
     <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff7a5c"/></svg></div>
+    
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+
+  <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>  
+    </div>
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>

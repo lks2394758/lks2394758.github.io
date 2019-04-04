@@ -175,8 +175,8 @@ textarea.form-control {
 }
 
 .site-header .site-logo img{
-  height: 60px;
-  width: 115px;
+  max-height: 60px;
+  max-width: 115px;
 }
 
 .site-header .social li {
@@ -435,8 +435,8 @@ textarea.form-control {
 
 @media (max-width: 991.98px) {
   .ftco-46 .ftco-46-image {
-    height: 200px;
-    display: none;
+    height: 300px;
+    
   }
 }
 
@@ -1278,6 +1278,10 @@ textarea.form-control {
   background-size: cover !important;
   background-position: center center;
 }
+#cf1{
+  position: relative;
+  margin: 0 auto;
+}
 
 .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
   min-height: 700px;
@@ -1305,7 +1309,33 @@ textarea.form-control {
   width:100%;
   text-align:center;
 }
-
+@keyframes fadeInOut{
+  0%{
+    background-image: url("../images/headImage2.jpeg");
+  }
+  20%{
+    background-image: url("../images/headImage2.jpeg");
+  }
+  40%{
+    background-image: url("../images/headImage3.jpeg");
+  }
+  60%{
+    background-image: url("../images/headImage3.jpeg");
+  }
+  80%{
+    background-image: url("../images/headImage.jpeg");
+  }
+  100%{
+    background-image: url("../images/headImage.jpeg");
+  }
+}
+#cover_bg{
+  animation-name: fadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+}
 
 @media (max-width: 991.98px) {
   .cover_1 .sub-heading {
@@ -1709,6 +1739,65 @@ textarea.form-control {
   font-size: 24px;
   color: #fff;
 }
+
+.modal{
+  display:none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 25%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+  margin:auto;
+  display: block;
+  width:80%;
+}
+
+@keyframes zoom{
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+  color: #bbb;
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 700px){
+  .modal-content{
+    width: 100%;
+  }
+}
+
+#backBtn{
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  min-height: 40px;
+  min-width: 40px;
+  z-index: 999;
+  background-image: url("../images/backtotop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 
 #loader {
   position: fixed;
