@@ -1100,8 +1100,13 @@ textarea.form-control {
 }
 
 .menu-burger-wrap {
-  position: relative;
+  position: fixed;
   z-index: 1000;
+  right: 3%;
+}
+.site-logo-wrap{
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .site-nav-toggle {
