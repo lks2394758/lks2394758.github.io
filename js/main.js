@@ -291,8 +291,10 @@ AOS.init({
 
   $('.modalSourceImg').click(function(){
     $('#myModal').css("display", "block");
-    $('#modalImg').attr("src",$('modalSourceImg').attr("src"));
+    var src = $(this).attr('src');
+    $('#modalImg').attr("src",src);
   });
+
 
   $('.close').click(function(){
     $('#myModal').css("display","none");
