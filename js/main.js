@@ -297,4 +297,21 @@ AOS.init({
   $('.close').click(function(){
     $('#myModal').css("display","none");
   });
+
+  $('#reserve-btn').click(function(){
+      var phone = $('#phone').val();
+      var selectDiv = document.getElementById('persons');
+      var persons = selectDiv.options[selectDiv.selectedIndex].text;
+      var date = $('#date').val();
+      var time = $('#time').val();
+      var name = $('#name').val();
+      if(phone != '' && persons != '' && date != '' && time != '' && name != ''){
+        var email = 'mailto:yunzhuangvan@gmail.com';
+        var mailstring = 'mailto:'+email+'?subject=Reservation'+'&body='+name+' want to reserve table for '+
+        persons + ' on ' + date +' '+ time + ', phone number is '+phone;
+        location.href=mailstring;
+      }else{
+        alert('Please enter all infomation to reserve a table');
+      }
+  });
 })(jQuery);

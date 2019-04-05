@@ -390,6 +390,10 @@ textarea.form-control {
   background: #fff;
 }
 
+.ftco-46{
+  width: auto;
+}
+
 .ftco-46 .ftco-46-row > div {
   text-align: center;
   width: 100%;
@@ -397,7 +401,7 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .ftco-46 .ftco-46-row > div {
-    width: 33.33333%;
+    width: 300px;
   }
 }
 
@@ -432,6 +436,12 @@ textarea.form-control {
   background: #000;
   opacity: .05;
 }
+
+/* @media( min-width: 992px){
+  .ftco-46{
+    width: 80%;
+  }
+} */
 
 @media (max-width: 991.98px) {
   .ftco-46 .ftco-46-image {
@@ -1253,6 +1263,7 @@ textarea.form-control {
   height: 445px;
   z-index: -1;
 }
+
 .cover_1 {
   position: relative;
   overflow: hidden;
