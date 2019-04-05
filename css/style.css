@@ -1302,6 +1302,7 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center center;
+  background-image: url("../images/headImage2.jpeg");
 }
 #cf1{
   position: relative;
@@ -1355,6 +1356,7 @@ textarea.form-control {
   }
 }
 #cover_bg{
+  -webkit-transform-style: preserve-3d;
   animation-name: fadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
