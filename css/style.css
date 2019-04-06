@@ -1356,12 +1356,12 @@ textarea.form-control {
   }
 }
 #cover_bg{
-  -webkit-transform-style: preserve-3d;
   animation-name: fadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 15s;
   animation-direction: alternate;
+  background-image: url("../images/headImage2.jpeg"), url("../images/headImage3.jpeg"),url("../images/headImage.jpeg");;
 }
 
 @media (max-width: 991.98px) {
