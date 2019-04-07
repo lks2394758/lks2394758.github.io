@@ -1302,7 +1302,6 @@ textarea.form-control {
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center center;
-  background-image: url("../images/headImage2.jpeg");
 }
 #cf1{
   position: relative;
@@ -1363,6 +1362,7 @@ textarea.form-control {
   animation-direction: alternate; */
   background: url("../images/headImage.jpeg");
   background-blend-mode: darken;
+  transition: 3s;
 }
 
 @media (max-width: 991.98px) {

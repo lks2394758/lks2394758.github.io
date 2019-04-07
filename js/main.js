@@ -316,29 +316,21 @@ AOS.init({
         alert('Please enter all infomation to reserve a table');
       }
   });
-
-  var bgImageArray = ['images/headImage.jpeg','images/headImage2.jpeg','images/headImage3.jpeg'];
-  var interval = 4;
-  bgImageArray.forEach(function(img){
-    new Image().src = img;
-  }); 
-  function backgroundSequence() {
-    window.clearTimeout();
-    var k = 0;
-    for (i = 0; i < bgImageArray.length; i++) {
-      setTimeout(function(){
-        document.getElementById(cover_bg).style.background =  "url(" + bgImageArray[k] + ")";
-        if ((k + 1) === bgImageArray.length) {
-          setTimeout(function() {
-              backgroundSequence(); 
-            },
-            (interval * 1000))
-        } 
-        else { 
-          k++; 
-        }			
-      }, (interval * 1000) * i);	
-    }
-  }
-  backgroundSequence();
 })(jQuery);
+
+var bgImageArray = ['images/headImage.jpeg','images/headImage2.jpeg','images/headImage3.jpeg'];
+var secs = 4;
+bgImageArray.forEach(function(img){
+  new Image().src = img;
+}); 
+function backgroundSequence() {
+  window.clearTimeout();
+  var k = 0;
+  for (i = 0; i < bgImageArray.length; i++) {
+    setTimeout(function(){ 
+      document.getElementById("cover_bg").style.background = "url(" + bgImageArray[k] + ")";
+    if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+    }, (secs * 1000) * i)	
+  }
+}
+backgroundSequence();
