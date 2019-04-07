@@ -1335,7 +1335,7 @@ textarea.form-control {
   width:100%;
   text-align:center;
 }
-@keyframes fadeInOut{
+/* @keyframes fadeInOut{
   0%{
     background-image: url("../images/headImage2.jpeg");
   }
@@ -1354,14 +1354,15 @@ textarea.form-control {
   100%{
     background-image: url("../images/headImage.jpeg");
   }
-}
+} */
 #cover_bg{
-  animation-name: fadeInOut;
+  /* animation-name: fadeInOut;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 15s;
-  animation-direction: alternate;
-  background-image: url("../images/headImage2.jpeg"), url("../images/headImage3.jpeg"),url("../images/headImage.jpeg");;
+  animation-direction: alternate; */
+  background-image: url("../images/headImage.jpeg");
+  background-blend-mode: darken;
 }
 
 @media (max-width: 991.98px) {
