@@ -327,17 +327,17 @@ AOS.init({
     var k = 0;
     for (i = 0; i < bgImageArray.length; i++) {
       setTimeout(function(){
-        document.getElementById(cover_bg).style.background-image =  "url(" + bgImageArray[k] + ")";
+        document.getElementById(cover_bg).style.background =  "url(" + bgImageArray[k] + ")";
         if ((k + 1) === bgImageArray.length) {
           setTimeout(function() {
               backgroundSequence(); 
             },
-            (secs * 1000))
+            (interval * 1000))
         } 
         else { 
           k++; 
         }			
-      }, (secs * 1000) * i);	
+      }, (interval * 1000) * i);	
     }
   }
   backgroundSequence();
