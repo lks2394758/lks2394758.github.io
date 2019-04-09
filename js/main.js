@@ -54,83 +54,83 @@ AOS.init({
   };
   OnePageNav();
 
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
 
-    var $this = $(this),
-      st = $this.scrollTop(),
-      navbar = $('.site-header');
+  //   var $this = $(this),
+  //     st = $this.scrollTop(),
+  //     navbar = $('.site-header');
 
-    if (st > 150) {
-      if ( !navbar.hasClass('scrolled') ) {
-        navbar.addClass('scrolled');  
-      }
-    } 
-    if (st < 150) {
-      if ( navbar.hasClass('scrolled') ) {
-        navbar.removeClass('scrolled sleep');
-      }
-    } 
-    if ( st > 350 ) {
-      if ( !navbar.hasClass('awake') ) {
-        navbar.addClass('awake'); 
-      }
-    }
-    if ( st < 350 ) {
-      if ( navbar.hasClass('awake') ) {
-        navbar.removeClass('awake');
-        navbar.addClass('sleep');
-      }
-    }
+  //   if (st > 150) {
+  //     if ( !navbar.hasClass('scrolled') ) {
+  //       navbar.addClass('scrolled');  
+  //     }
+  //   } 
+  //   if (st < 150) {
+  //     if ( navbar.hasClass('scrolled') ) {
+  //       navbar.removeClass('scrolled sleep');
+  //     }
+  //   } 
+  //   if ( st > 350 ) {
+  //     if ( !navbar.hasClass('awake') ) {
+  //       navbar.addClass('awake'); 
+  //     }
+  //   }
+  //   if ( st < 350 ) {
+  //     if ( navbar.hasClass('awake') ) {
+  //       navbar.removeClass('awake');
+  //       navbar.addClass('sleep');
+  //     }
+  //   }
 
-  }); 
+  // }); 
 
 
-  $('.js-site-nav-toggle').on('click', function(e) {
+  // $('.js-site-nav-toggle').on('click', function(e) {
 
-    var $this = $(this);
-    e.preventDefault();
+  //   var $this = $(this);
+  //   e.preventDefault();
 
  
 
-    if ( $('body').hasClass('menu-open') ) {
-      $this.removeClass('active');
-        $('.site-menu .site-menu-inner > ul > li').each(function(i) {
+  //   if ( $('body').hasClass('menu-open') ) {
+  //     $this.removeClass('active');
+  //       $('.site-menu .site-menu-inner > ul > li').each(function(i) {
 
-          var that = $(this);
-          setTimeout(function() {
-            that.removeClass('is-show');
-          }, i * 100);
+  //         var that = $(this);
+  //         setTimeout(function() {
+  //           that.removeClass('is-show');
+  //         }, i * 100);
 
-          // $(this).removeClass('is-show');
-        });
+  //         // $(this).removeClass('is-show');
+  //       });
       
-      setTimeout(function() {
-        // $('.site-menu').fadeOut(400);
-        $('.site-menu').removeClass('site-menu-show');
-      }, 800);
+  //     setTimeout(function() {
+  //       // $('.site-menu').fadeOut(400);
+  //       $('.site-menu').removeClass('site-menu-show');
+  //     }, 800);
 
-      $('body').removeClass('menu-open');
-    } else {
+  //     $('body').removeClass('menu-open');
+  //   } else {
 
-      // $('.site-menu').fadeIn(400);
-      $('.site-menu').addClass('site-menu-show');
+  //     // $('.site-menu').fadeIn(400);
+  //     $('.site-menu').addClass('site-menu-show');
 
-      $this.addClass('active');
-      $('body').addClass('menu-open');
+  //     $this.addClass('active');
+  //     $('body').addClass('menu-open');
 
-      setTimeout(function() {
-        $('.site-menu .site-menu-inner > ul > li').each(function(i) {
-          var that = $(this);
-          setTimeout(function() {
-            that.addClass('is-show');
-          }, i * 100);
+  //     setTimeout(function() {
+  //       $('.site-menu .site-menu-inner > ul > li').each(function(i) {
+  //         var that = $(this);
+  //         setTimeout(function() {
+  //           that.addClass('is-show');
+  //         }, i * 100);
 
-        });
-      }, 500);
+  //       });
+  //     }, 500);
       
-    }
+  //   }
 
-  });
+  // });
 	
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
@@ -275,13 +275,6 @@ AOS.init({
       }
     }
   });
-
-  $('#backBtn').each(function(){
-    $(this).click(function(){ 
-        $('html,body').animate({ scrollTop: 0 }, 500);
-        return false; 
-    });
-});
 
   $('#date').datepicker({
     'format': 'm/d/yyyy',

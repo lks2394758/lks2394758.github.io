@@ -31,7 +31,7 @@
 
     <div class="site-wrap">
       
-      <nav class="site-menu" id="ftco-navbar-spy">
+      <!-- <nav class="site-menu" id="ftco-navbar-spy">
         <div class="site-menu-inner" id="ftco-navbar">
           <ul class="list-unstyled">
             <li><a href="#section-home">首页</a></li>
@@ -54,7 +54,46 @@
           </div>
         </div>
        
-      </header> <!-- site-header -->
+      </header>  -->
+      <header class="site-header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="d-flex flex-grow-1" id="toggleDiv">
+                  <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+                  <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                    <img id="logo" src="images/logo.png" alt="logo">
+                  </a>
+                  <a class="navbar-brand mx-auto d-lg-none d-inline-block" href="#">
+                      <img id="logo" src="images/logo.png" alt="logo">
+                  </a>
+                  <div class="w-100 text-right" >
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+                  </div>
+              </div>
+              <div class="collapse navbar-collapse flex-grow-1 text-right " id="myNavbar">
+                  <ul class="navbar-nav ml-auto flex-nowrap ">
+                      <li class="nav-item">
+                          <a href="#section-home" class="nav-link m-2 menu-item nav-active">首页</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#section-about" class="nav-link m-2 menu-item">餐厅简介</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#section-menu" class="nav-link m-2 menu-item">菜单</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#section-reservation" class="nav-link m-2 menu-item">预定座位</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#footer" class="nav-link m-2 menu-item">联系我们</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
+
+      <!-- site-header -->
       
       <div class="main-wrap " id="section-home">
 
@@ -81,21 +120,22 @@
               </div>
             </div> -->
           <div id="cover_bg" class="img_bg" data-stellar-background-ratio="0.5">
-            <div class="container" id="selective-section-container">
-              <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-10" data-aos="fade-up">
-                  <h2 class="heading mb-5">来自云南的地道风味</h2>
-                  <p class="sub-heading mb-5">用舌尖感受</p>
-                  <p><a href="#section-reservation" class="smoothscroll btn btn-outline-white bg-secondary px-5 py-3">预定座位</a></p>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div> <!-- .cover_1 -->
 
         <div class="section"  data-aos="fade-up">
           <div class="container-fluid">
             <div class="row section-heading justify-content-center mb-5">
+              <div class="container" id="selective-section-container">
+                <div class="row align-items-center justify-content-center text-center">
+                  <div class="col-md-10" data-aos="fade-up" style="margin-bottom:5%">
+                    <h2 class="heading mb-5">来自云南的地道风味</h2>
+                    <p class="sub-heading mb-5">用舌尖感受</p>
+                    <p><a href="#section-reservation" class="smoothscroll btn btn-outline-white bg-secondary px-5 py-3">预定座位</a></p>
+                  </div>
+                </div>
+              </div>
               <div class="col-md-8 text-center">
                 <h2 class="heading mb-3">厨师精选菜品</h2>
               </div>
@@ -106,37 +146,44 @@
 
                   <div class="ftco-46-row d-flex flex-column flex-lg-row">
                     <div class="ftco-46-image" style="background-image: url(images/selected-1.png);"></div>
-                    <div class="ftco-46-text ftco-46-arrow-right">                      
+                    <div class="ftco-46-text ftco-46-arrow-left">
+                      <h4 class="ftco-46-subheading">滇味传承</h4>
+                      <h3 class="ftco-46-heading">云庄汽锅鸡</h3>
+                      <p class="mb-5">        云润佳肴齿留余香        <br>       庄欣祥和满园生辉        </p>                                            
+                    </div>
+                    <div class="ftco-46-image" style="background-image: url(images/selected-2.jpg);"></div>
+                    <div class="ftco-46-text ftco-46-arrow-left">
                       <h4 class="ftco-46-subheading">火热铜锅</h4>
                       <h3 class="ftco-46-heading">铜锅焖海鲜</h3>
                       <p class="mb-5">        多种海鲜用传统铜锅焖制       <br>       香辣可口        </p>
                     </div>
-                    <div class="ftco-46-image" style="background-image: url(images/selected-2.jpg);"></div>
-                    <div class="ftco-46-text ftco-46-arrow-right">
+                  </div>
+                <div class="ftco-46-row d-flex flex-column flex-lg-row">
+                  <div class="ftco-46-image" style="background-image: url(images/selected-3.png);"></div>
+                  <div class="ftco-46-text ftco-46-arrow-left">                                                            
                       <h4 class="ftco-46-subheading">云庄秘方</h4>
                       <h3 class="ftco-46-heading">云庄烤鱼</h3>
                       <p class="mb-5">简介缺失</p>
-                    </div>
-                    <div class="ftco-46-image" style="background-image: url(images/selected-3.png);"></div>
-                  </div>
-                <div class="ftco-46-row d-flex flex-column flex-lg-row">
-                  <div class="ftco-46-text ftco-46-arrow-up">                    
-                    <h4 class="ftco-46-subheading">滇味传承</h4>
-                    <h3 class="ftco-46-heading">云庄汽锅鸡</h3>
-                    <p class="mb-5">        云润佳肴齿留余香        <br>       庄欣祥和满园生辉        </p>
                   </div>
                   <div class="ftco-46-image" style="background-image: url(images/selected-4.JPG);"></div>
                   <div class="ftco-46-text ftco-46-arrow-left">
-                    
                     <h4 class="ftco-46-subheading">云庄美食</h4>
                     <h3 class="ftco-46-heading">玉蓉吐司</h3>
                     <p class="mb-5">      外酥里嫩      <br>    软糯香甜    </p>
                   </div>
+                </div>
+                <div class="ftco-46-row d-flex flex-column flex-lg-row">
                   <div class="ftco-46-image" style="background-image: url(images/selected-5.JPG);"></div> 
                   <div class="ftco-46-text ftco-46-arrow-left">
                       <h4 class="ftco-46-subheading">滇味家常</h4>
                       <h3 class="ftco-46-heading">滇味凉米线</h3>
                       <p class="mb-5"> 简介缺失  </p>
+                  </div>
+                  <div class="ftco-46-image" style="background-image: url(images/selected-6.JPG);"></div> 
+                  <div class="ftco-46-text ftco-46-arrow-left">
+                      <h4 class="ftco-46-subheading">咸香嫩滑</h4>
+                      <h3 class="ftco-46-heading">红烧肘子</h3>
+                      <p class="mb-5">      糯软嫩滑      <br>    香气四溢    </p>
                   </div>
                 </div>
               </div>
@@ -364,7 +411,7 @@
         </footer>
 
     </div>
-    <div id="backBtn" class="btn btn-primary"></div>
+    <a href="#section-home"><div id="backBtn" class="btn btn-primary"></div></a>
     <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff7a5c"/></svg></div>
     

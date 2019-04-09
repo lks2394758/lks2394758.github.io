@@ -1,5 +1,6 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -158,8 +159,30 @@ textarea.form-control {
   z-index: 1021;
 }
 
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1022;
+  width: 100%;
+  background: #121212;
+}
+
+.nav-item{
+  font-weight: bold;
+}
+
+.nav-item a{
+  color:white !important;
+}
+
+.nav-item a:hover{
+  color: orange !important;
+}
+
+
 /* Site Header */
-.site-header {
+/* .site-header {
   padding: 3em 30px;
   position: absolute;
   top: 0;
@@ -242,6 +265,23 @@ textarea.form-control {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
+} */
+
+#logo{
+  max-height: 100px;
+  margin-left: 30px;
+}
+
+@media (max-width:800px){
+  #logo{
+    max-height: 40px;
+  }
+}
+
+#toggleDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-control {
@@ -1298,11 +1338,6 @@ textarea.form-control {
   font-size: 18px;
 }
 
-.cover_1 .img_bg {
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position: center center;
-}
 #cf1{
   position: relative;
   margin: 0 auto;
@@ -1360,9 +1395,12 @@ textarea.form-control {
   animation-iteration-count: infinite;
   animation-duration: 15s;
   animation-direction: alternate; */
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center;
   background: url("../images/headImage.jpeg");
   background-blend-mode: darken;
-  transition: 3s;
+  transition: 3s;  
 }
 
 @media (max-width: 991.98px) {
