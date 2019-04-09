@@ -163,7 +163,7 @@ textarea.form-control {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1022;
+  z-index: 999;
   width: 100%;
   background: #121212;
 }
@@ -178,7 +178,7 @@ textarea.form-control {
 
 .nav-item a:hover{
   color: orange !important;
-}
+} 
 
 
 /* Site Header */
@@ -762,6 +762,9 @@ textarea.form-control {
 
 .menu-food-item p:last-child {
   margin-bottom: 0;
+}
+.menu-nav-item a:hover{
+  color: orange !important;
 }
 
 .footer-contact-widget .contact-email {
@@ -1809,7 +1812,7 @@ textarea.form-control {
 .modal{
   display:none;
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   left: 0;
   top: 0;
   overflow: auto;
