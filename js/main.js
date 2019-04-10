@@ -30,27 +30,28 @@ AOS.init({
 
   // navigation
   var OnePageNav = function() {
-    var navToggler = $('.js-site-nav-toggle');
-    $(".smoothscroll[href^='#'], #ftco-navbar ul li a[href^='#']").on('click', function(e) {
-      e.preventDefault();
-      var hash = this.hash;
-        
-      $('html, body').animate({
+  var navToggler = $('.navbar-toggler');
+  $(".smoothscroll[href^='#'], #myNavbar ul li a[href^='#']").on('click', function(e) {
+    e.preventDefault();
+    var hash = this.hash;
+      
+    $('html, body').animate({
 
-        scrollTop: $(hash).offset().top
-      }, 700, 'easeInOutExpo', function(){
-        window.location.hash = hash;
-      });
+      scrollTop: $(hash).offset().top
+    }, 1000, 'easeInOutExpo', function(){
+      window.location.hash = hash;
     });
-    $("#ftco-navbar ul li a[href^='#']").on('click', function(e){
-      if ( navToggler.is(':visible') ) {
-        navToggler.click();
-      }
-    });
+  });
+  
 
-    // $('body').on('activate.bs.scrollspy', function () {
-    //   console.log('nice');
-    // })
+  $(".nav-item").on('click', function(){
+    if($(".navbar-toggler").is(':visible')){
+      $(".navbar-toggler").click();
+    }
+  });
+  // $('body').on('activate.bs.scrollspy', function () {
+  //   console.log('nice');
+  // })
   };
   OnePageNav();
 
@@ -311,19 +312,19 @@ AOS.init({
   });
 })(jQuery);
 
-var bgImageArray = ['images/headImage.jpeg','images/headImage2.jpeg','images/headImage3.jpeg'];
-var secs = 4;
-bgImageArray.forEach(function(img){
-  new Image().src = img;
-}); 
-function backgroundSequence() {
-  window.clearTimeout();
-  var k = 0;
-  for (i = 0; i < bgImageArray.length; i++) {
-    setTimeout(function(){ 
-      document.getElementById("cover_bg").style.background = "url(" + bgImageArray[k] + ")";
-    if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-    }, (secs * 1000) * i)	
-  }
-}
-backgroundSequence();
+// var bgImageArray = ['images/headImage.jpeg','images/headImage2.jpeg','images/headImage3.jpeg'];
+// var secs = 4;
+// bgImageArray.forEach(function(img){
+//   new Image().src = img;
+// }); 
+// function backgroundSequence() {
+//   window.clearTimeout();
+//   var k = 0;
+//   for (i = 0; i < bgImageArray.length; i++) {
+//     setTimeout(function(){ 
+//       document.getElementById("cover_bg").style.background = "url(" + bgImageArray[k] + ")";
+//     if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
+//     }, (secs * 1000) * i)	
+//   }
+// }
+// backgroundSequence();
