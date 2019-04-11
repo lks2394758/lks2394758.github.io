@@ -431,7 +431,7 @@ textarea.form-control {
 }
 
 .ftco-46{
-  width: auto;
+  width: 80%;
 }
 
 .ftco-46 .ftco-46-row > div {
@@ -441,12 +441,14 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .ftco-46 .ftco-46-row > div {
-    width: 300px;
+    width: 25%;
+    margin-bottom:30px;
   }
 }
 
 .ftco-46 .ftco-46-subheading {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
   color: #b3b3b3;
   color: #ff7a5c;
   text-transform: uppercase;
