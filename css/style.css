@@ -1927,6 +1927,11 @@ textarea.form-control {
   }
 }
 
+#reserve-btn{
+  color: #c69a51;
+  border-color: #c69a51;
+}
+
 #backBtn{
   position: fixed;
   bottom: 10%;
