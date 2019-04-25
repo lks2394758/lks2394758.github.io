@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #262626;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.8;
@@ -164,7 +164,7 @@ textarea.form-control {
   left: 0;
   z-index: 999;
   width: 100%;
-  background: #121212;
+  background: rgb(198, 154, 81);
 }
 
 .nav-item{
@@ -494,7 +494,7 @@ textarea.form-control {
 
 .ftco-46 .ftco-46-text {
   padding: 40px;
-  background: #fff;
+  background: none;
 }
 
 @media (max-width: 991.98px) {
@@ -541,7 +541,7 @@ textarea.form-control {
   height: 0;
   width: 0;
   position: absolute;
-  border-right-color: #fff;
+  border-right-color: #262626;
   border-width: 20px;
   margin-top: -20px;
 }
@@ -658,7 +658,7 @@ textarea.form-control {
 
 .site-tab-nav li a {
   background: none;
-  color: gray;
+  color: #c69a51;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -667,14 +667,12 @@ textarea.form-control {
   padding-right: 0;
   margin: 0 10px;
   font-weight: 600;
-  border-bottom: 2px solid #e6e6e6;
 }
 
 .site-tab-nav li a.active {
-  color: black;
-  color: #ff7a5c;
+  color: #c69a51;
   background: none;
-  border-bottom: 2px solid #ff7a5c;
+  border-bottom: 2px solid #c69a51;
 }
 
 .site-tab-nav, .nav-pills {
@@ -764,9 +762,6 @@ textarea.form-control {
 
 .menu-food-item p:last-child {
   margin-bottom: 0;
-}
-.menu-nav-item a:hover{
-  color: orange !important;
 }
 
 .footer-contact-widget .contact-email {
@@ -1303,9 +1298,9 @@ textarea.form-control {
 
 .form-wrap {
   padding: 40px;
-  background: #fff;
-  -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  background: none;
+  /* -webkit-box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1); */
 }
 
 #map {
@@ -1450,20 +1445,6 @@ textarea.form-control {
   
   }
 
-#cover_bg{
-  /* animation-name: fadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 15s;
-  animation-direction: alternate;
-  background-repeat: no-repeat;
-  background-size: cover !important;
-  background-position: center center; */
-  /* background: url("../images/headImage.jpeg");
-  background-blend-mode: darken;
-  transition: 3s;   */
-}
-
 .bg_img_item{
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1496,6 +1477,10 @@ textarea.form-control {
     font-weight: 900;
     line-height: 1.2;
   }
+}
+
+.heading, .sub-heading{
+  color: rgb(198, 154, 81);
 }
 
 .cover_1 a {
@@ -1858,7 +1843,7 @@ textarea.form-control {
 }
 
 .ftco-footer {
-  background: #121212;
+  background: #262626;
   padding: 7em 0;
   font-size: 15px;
   font-weight: 400;
@@ -1916,6 +1901,10 @@ textarea.form-control {
   }
 }
 
+.language-item{
+  cursor: pointer;
+}
+
 .close{
   position: absolute;
   top: 15px;
@@ -1944,10 +1933,12 @@ textarea.form-control {
   right: 5%;
   min-height: 40px;
   min-width: 40px;
-  z-index: 999;
+  z-index: 1999;
   background-image: url("../images/backtotop.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: #c69a51;
+  border-color:white;
 }
 
 
