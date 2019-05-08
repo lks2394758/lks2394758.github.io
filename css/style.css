@@ -1946,6 +1946,11 @@ textarea.form-control {
   border-color:white;
 }
 
+#quadImg{
+  max-width: 30%;
+  max-height: 30%;
+}
+
 
 #loader {
   position: fixed;
