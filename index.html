@@ -154,7 +154,7 @@
                   <div class="ftco-46-image" style="background-image: url(images/selected-4.JPG);"></div>
                   <div class="ftco-46-text ftco-46-arrow-left">
                     <h4 class="ftco-46-subheading">云庄美食</h4>
-                    <h3 class="ftco-46-heading sub-heading">玉蓉吐司</h3>
+                    <h3 class="ftco-46-heading sub-heading">玉茸吐司</h3>
                     <p class="mb-5 sub-heading">      外酥里嫩      <br>    软糯香甜    </p>
                   </div>
                 </div>
@@ -437,6 +437,7 @@
               
               <div class="col-md-4 mb-5">
                 <div class="footer-widget">
+                  <p class="mb-4" data-i18n="opendate">一周七天营业</p>
                   <h3 class="mb-4" data-i18n="lunch">午餐营业时间</h3>
                   <p data-i18n="lunch_time">11:00am - 3:00pm</p>
                   <h3 class="mb-4" data-i18n="dinner">晚餐营业时间</h3>
@@ -455,6 +456,7 @@
               </div>
               <div class="col-md-4">
                 <div class="footer-widget">
+                  <p data-i18n="wechatQrCode">微信二维码：</p>
                   <img id="quadImg" src="images/quadcode.jpeg">
                 </div>
               </div>
@@ -492,17 +494,31 @@
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          var uluru = {lat:49.170239, lng: -123.132551};
+          // The location
+          var myloc = {lat:49.169967, lng: -123.143862};
+          var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h5 id="firstHeading" class="firstHeading">云庄 Cool Chinese Restaurant</h5>'+
+            '<div id="bodyContent">'+
+            '<p><b>7260 Westminster Hwy, Richmond, BC V6X 1A1, Canada</b></p>'+
+            '<a href="https://maps.google.com/maps?ll=49.170033,-123.143862&z=19&t=m&hl=en-US&gl=US&mapclient=apiv3&cid=4125094137394528638">'+
+            'View on Google Maps</a> '+
+            '</div>'+
+            '</div>';
+          var infoWindow = new google.maps.InfoWindow({content:contentString});
           // The map, centered at Uluru
           var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 17, center: uluru});
+              document.getElementById('map'), {zoom: 19, center: myloc});
           // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
+          var marker = new google.maps.Marker({position: myloc, map: map});
+          marker.addListener('click',function(){
+            infoWindow.open(map,marker);
+          });
         }
     </script>
     
-
+    
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKTzgMbC7Hv7dv8Ec9vm3j3qWx6mDEhc&callback=initMap"></script>
     
     <script src="js/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
