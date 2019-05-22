@@ -1321,16 +1321,7 @@ textarea.form-control {
   position: relative;
   overflow: hidden;
 }
-.cover_1.overlay:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #000;
-  opacity: .2;
-}
+
 
 .cover_1 .lead {
   color: #fff;
@@ -1343,13 +1334,21 @@ textarea.form-control {
 }
 
 .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
-  min-height: 700px;
   height: 100vh;
 }
 
-.cover_1.cover_sm .img_bg, .cover_1.cover_sm .img_bg > .container > .row {
-  min-height: 600px;
-  height: 80vh;
+@media (min-width: 768px) {
+  .cover_1 .heading {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 767px){  
+  .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
+    height: 40vh;
+  }
 }
 
 .cover_1 .sub-heading {
@@ -1469,14 +1468,6 @@ textarea.form-control {
   font-weight: 300;
   font-size: 30px;
   line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-  .cover_1 .heading {
-    font-size: 70px;
-    font-weight: 900;
-    line-height: 1.2;
-  }
 }
 
 .heading, .sub-heading{
