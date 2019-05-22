@@ -1347,6 +1347,7 @@ textarea.form-control {
 
 @media (max-width: 767px){  
   .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
+    margin-top:60px;
     height: 40vh;
   }
 }
