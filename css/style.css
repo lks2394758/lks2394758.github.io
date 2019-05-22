@@ -1323,6 +1323,17 @@ textarea.form-control {
 }
 
 
+.cover_1.overlay:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .2;
+}
+
 .cover_1 .lead {
   color: #fff;
   font-size: 18px;
@@ -1337,6 +1348,11 @@ textarea.form-control {
   height: 100vh;
 }
 
+.cover_1.cover_sm .img_bg, .cover_1.cover_sm .img_bg > .container > .row {
+  min-height: 600px;
+  height: 80vh;
+}
+
 @media (min-width: 768px) {
   .cover_1 .heading {
     font-size: 70px;
@@ -1345,11 +1361,11 @@ textarea.form-control {
   }
 }
 
-/* @media (max-width: 767px){  
+@media (max-width: 767px){  
   .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
     height: 45vh;
   }
-} */
+}
 
 .cover_1 .sub-heading {
   color: white;
