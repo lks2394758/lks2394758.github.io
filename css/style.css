@@ -1345,11 +1345,11 @@ textarea.form-control {
   }
 }
 
-@media (max-width: 767px){  
+/* @media (max-width: 767px){  
   .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
     height: 45vh;
   }
-}
+} */
 
 .cover_1 .sub-heading {
   color: white;
