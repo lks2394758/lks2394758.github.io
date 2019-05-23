@@ -1383,17 +1383,6 @@ textarea.form-control {
   width:100%;
   text-align:center;
 }
-/* @keyframes fadeInOut{
-  0%{
-    background-image: url("../images/headImage2.jpeg");
-  }
-  40%{
-    background-image: url("../images/headImage3.jpeg");
-  }
-  80%{
-    background-image: url("../images/headImage.jpeg");
-  }
-} */
 
 @keyframes backgroundchangeFadeInOut {
   0% {
@@ -1442,7 +1431,7 @@ textarea.form-control {
   animation-delay: 4s;
   -webkit-animation-delay: 4s;
 }
-#cover_bg div:nth-of-type(3) {
+#cover_bg div:nth-of-type(4) {
   animation-delay: 0;
   -webkit-animation-delay: 0;
 }
