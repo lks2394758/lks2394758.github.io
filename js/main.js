@@ -303,7 +303,7 @@ AOS.init({
       var name = $('#name').val();
       if(phone != '' && persons != '' && date != '' && time != '' && name != ''){
         var email = 'mailto:yunzhuangvan@gmail.com';
-        var mailstring = 'mailto:'+email+'?subject=Reservation'+'&body='+name+' want to reserve table for '+
+        var mailstring = email+'?subject=Reservation'+'&body='+name+' want to reserve table for '+
         persons + ' on ' + date +' '+ time + ', phone number is '+phone;
         location.href=mailstring;
       }else{
