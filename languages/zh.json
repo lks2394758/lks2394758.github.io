@@ -19,7 +19,7 @@
 	"time":"时间",
 	"reserve_now":"立即预定",
 	"lunch": "营业时间",
-	"lunch_time": "11:00am - 8:00pm",
+	"lunch_time": "星期五至星期三 11:00am - 8:00pm",
 	"dinner": "晚餐营业时间",	
 	"dinner_time": "5:00pm - 10:00pm",
 	"address":"地址",
@@ -50,6 +50,6 @@
 	"membership-score-item2-item3":"满500分升级到钻石会员",
 	"membership-score-payback":"积分可返现，每100点积分返10元现金",
 	"membership-score-extra":"积分可用于兑换酒水或菜品，兑换物品根据季节实时更换，敬请关注云庄微信号了解更多详情",
-	"opendate":"一周六天营业，周四休息",
+	"opendate":"一周六天营业",
 	"wechatQrCode": "微信二维码："
 }
